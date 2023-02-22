@@ -5,11 +5,11 @@
 class Cloudlens < Formula
   desc ""
   homepage "https://github.com/one2nc/cloudlens"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0/cloudlens_0.1.0_darwin_all.tar.gz"
-    sha256 "a3868c560384fd79080cdcfed7c1b9d9285dc64d90f35070c1a314c5914bd05d"
+    url "https://github.com/one2nc/cloudlens/releases/download/v0.1.1/cloudlens_0.1.1_darwin_all.tar.gz"
+    sha256 "106c9640831037a344f1bdcff9c5a5cfbfec39cefbef7da0689bbced064a8152"
 
     def install
       bin.install "cloudlens"
@@ -18,24 +18,24 @@ class Cloudlens < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0/cloudlens_0.1.0_linux_arm64.tar.gz"
-      sha256 "2caa942a538f80bb9ed0896172a2ed8019e1f7eb74907bb907faa56f2d6d11ff"
+      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.1/cloudlens_0.1.1_linux_arm64.tar.gz"
+      sha256 "614d61eade79e0b3760d0dc4431f12c401af93011d2d85db377c6f0237b7b79a"
 
       def install
         bin.install "cloudlens"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0/cloudlens_0.1.0_linux_amd64.tar.gz"
-      sha256 "7685879202a057f837728935cc7a742a02ef1b1046e8b9956da3cb0d5ed33a8e"
+      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.1/cloudlens_0.1.1_linux_amd64.tar.gz"
+      sha256 "617bd43c6ecdd1a15c92d0bfebbb66d479de5e451b6fa57be6ef182ea7f643af"
 
       def install
         bin.install "cloudlens"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0/cloudlens_0.1.0_linux_armv6.tar.gz"
-      sha256 "8cbc6ce84973cba6d270f5c2810ac2ad8064a3f3fc5a430f0f2f915e6fb1a706"
+      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.1/cloudlens_0.1.1_linux_armv6.tar.gz"
+      sha256 "841580595f711a142c446c50795120419da85b7cfb81919166df0b85e682881b"
 
       def install
         bin.install "cloudlens"
