@@ -5,11 +5,11 @@
 class Cloudlens < Formula
   desc ""
   homepage "https://github.com/one2nc/cloudlens"
-  version "0.1.0-rc.4"
+  version "0.1.0-rc.5"
 
   on_macos do
-    url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.4/cloudlens_0.1.0-rc.4_darwin_all.tar.gz"
-    sha256 "6cac52a3c1a1c060fee5f3b8282d5f8b6b1a4844af4dcd700e19ca1a7cb071b6"
+    url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.5/cloudlens_0.1.0-rc.5_darwin_all.tar.gz"
+    sha256 "b4249930ba909fc27d6f2975a1bdafaefb38a21a94776d5a802ec2fff826bb63"
 
     def install
       bin.install "cloudlens"
@@ -18,24 +18,24 @@ class Cloudlens < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.4/cloudlens_0.1.0-rc.4_linux_arm64.tar.gz"
-      sha256 "3d4aec8445efd8a65e5faa76c8d1518e56f30064f02178502a4c7824682d64ef"
+      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.5/cloudlens_0.1.0-rc.5_linux_arm64.tar.gz"
+      sha256 "cd2e7728452b502e24ad9de5dd06a3480588a1b8c42595c75028471b65d64dc1"
 
       def install
         bin.install "cloudlens"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.4/cloudlens_0.1.0-rc.4_linux_amd64.tar.gz"
-      sha256 "bb48f7f91f701d02508b4a068fc26b2bf9d7ff7df8d7739ad2106a534b6c93bd"
+      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.5/cloudlens_0.1.0-rc.5_linux_amd64.tar.gz"
+      sha256 "07ee05f305cd43619ae11a252bde25f7755e0e2fb850cdab08c17285a18cac67"
 
       def install
         bin.install "cloudlens"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.4/cloudlens_0.1.0-rc.4_linux_armv6.tar.gz"
-      sha256 "3042966ae98320568b689b53c8d01174279e7fbc077bbbfac9cf7f45c04765dc"
+      url "https://github.com/one2nc/cloudlens/releases/download/v0.1.0-rc.5/cloudlens_0.1.0-rc.5_linux_armv6.tar.gz"
+      sha256 "d0c3f3f9873a4b1daff6ca97dfcee5b70da4598dc72a30fd0e78cc2ee55baeb0"
 
       def install
         bin.install "cloudlens"
